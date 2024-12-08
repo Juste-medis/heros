@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+.thunbnail {
+  width: 100px;
+  height: 120px;
+  object-fit: cover;
+  text-align: left;
+
+}
+.detail-thunbnail {
+  width: 100%;
+   object-fit: contain;
+  text-align: left;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.unity {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  height: 100%;
+  width: 100%;
+  border: 3px solid transparent;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.unity-hero {
+  text-decoration: none;
+  min-height: 300px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.body-container {
+  margin-top: 6rem;
 }
 
-.App-link {
-  color: #61dafb;
+a>div:hover {
+  box-shadow: rgba(23, 23, 199, 0.1) 0px 4px 16px, rgba(13, 13, 207, 0.1) 0px 8px 24px, rgba(13, 13, 179, 0.1) 0px 16px 56px;
+  border: 3px solid blue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.badge {
+  color: black;
+}
+
+.nav-link {
+  font-weight: 400;
+  color: black;
+}
+
+.detail-list {
+   width: 100%;
+   padding-inline: 10%;
+}
+.detail-list>span {
+  margin-top: 2rem;
+  width: 100%;
+}
+.detail-list .badge {
+  float: right;
+}
+
+
+/* Écran mobile : jusqu'à 767px */
+@media (max-width: 767px) {
+  
+.detail-list {
+  width: 100%;
+  padding-inline: 0%;
+} 
 }
